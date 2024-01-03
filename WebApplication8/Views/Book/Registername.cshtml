@@ -1,0 +1,14 @@
+﻿@model WebApplication8.Models.Book.RegisterNameViewModel
+
+<form method="post">
+    <p>
+        <label>name: </label>
+        <input name="Name" type="text" value="@Model.Name" />
+        <input type="submit" />
+    </p>
+</form>
+@if(Model.File != null)
+{
+<img src="data:image/png;base64,@Model.FileBase64"/>
+    
+}
